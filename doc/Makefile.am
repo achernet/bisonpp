@@ -14,8 +14,8 @@ noinst_TEXINFOS = \
 
 # Generate the man page from its .dman source file.
 # The dman utility is a parser from the flex++/bison++ examples.
-%: %.dman
-	dman < $*.dman > $@
+#%: %.dman
+#	dman < $*.dman > $@
 
 # FIXME:  For some reason automake isn't distributing the noinst files,
 # so place them in EXTRA_DIST to force their inclusion.
